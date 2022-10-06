@@ -1,4 +1,4 @@
-def zip():
+def zip1():
   # zip
   # Notice the format enumerate actually returns, let's take a look by transforming it to a list()
   # list(enumerate('abcde'))
@@ -12,7 +12,7 @@ def zip():
   mylist2 = ['a','b','c','d','e']
   
   # This one is also a generator! We will explain this later, but for now let's transform it to a list
-  zip(mylist1,mylist2)
+  print(list(zip(mylist1, mylist2)))
   
   
   # list(zip(mylist1,mylist2))
@@ -48,13 +48,15 @@ def zip():
   # Zip Practice #1
   # Print to the screen phrases like the following example:
   
-  # "The capital of Germany is Berlin"
+  print("The capital of Germany is Berlin")
   
   # Use the zip function, loops, and the following lists of countries and capitals to solve it quickly and efficiently.
   
-  # capitals = ["Berlin", "Tokyo", "Paris", "Helsinki", "Ottawa", "Canberra"]
-  # countries = ["Germany", "Japan", "France", "Finland", "Canada", "Australia"]
-  
+  capitals = ["Berlin", "Tokyo", "Paris", "Helsinki", "Ottawa", "Canberra"]
+  countries = ["Germany", "Japan", "France", "Finland", "Canada", "Australia"]
+
+  for country, capital in zip(countries,capitals):
+    print(f" the capital of {country} is  {capital}")
   
   
   # Zip Practice #2
