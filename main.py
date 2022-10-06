@@ -23,8 +23,8 @@ from min_max import min_max
 # comparison()
 # loop()
 # random()
-ranges()
-# enum()
+# ranges()
+enum()
 # zip()
 # min_max()
 
